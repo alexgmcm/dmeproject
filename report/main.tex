@@ -1,0 +1,88 @@
+% file: main.tex
+
+\input{preamble}
+
+% \renewcommand\thesubsection{(\alph{subsection})}
+% \renewcommand\thesubsubsection{\arabic{subsubsection}.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% File Paths
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\einleitungPath}[1]{%
+    %1-anfang/#1
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\theheader}{%
+    University Of Edinburgh
+}
+
+\newcommand{\thetitle}{%
+}
+\newcommand{\thesubtitle}{%
+    DME:
+
+    Mini-Project Report
+}
+\newcommand{\theauthor}{%
+    %Tim Sterker \emph{(s1365873)}
+    %\emph{s1365873}
+    \\
+    dragos\\
+    andrew\\
+    alex\\
+    tim\\
+}
+\newcommand{\thecity}{%
+    Edinburgh
+}
+\newcommand{\thedate}{%
+    \small \today
+}
+\newcommand{\thereferent}{%
+    Prof. Jörg Berdux
+}
+\newcommand{\thekorreferent}{%
+    Prof. Wolfgang Weitz
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title + TOC + LOF
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\input{title}
+\input{abstract.tex}
+
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+%\listoffigures
+%\lstlistoflistings
+\newpage
+
+\enableHeaders
+\pagenumbering{arabic}
+%\input{todo.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+%\input{report}
+\input{introduction/introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography + Attachments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newpage
+% \nocite{*}    % WARNING: MIGHT THROW ERRORS due to special characters in bibliography
+% \bibliographystyle{plain}
+% %\bibliographystyle{alpha}
+% \bibliography{/home/tster/Documents/latex-bibs/edinburgh-courses}
+
+\end{document}

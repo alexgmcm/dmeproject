@@ -1,0 +1,445 @@
+\documentclass[11pt, a4paper]{article}
+%\documentclass[10pt, a4paper]{report}
+% Palatino for rm and math | Helvetica for ss | Courier for tt
+% http://www.tug.dk/FontCatalogue/palatino/
+\usepackage{mathpazo} % math & rm
+\linespread{1.05}        % Palatino needs more leading (space between lines)
+\usepackage[scaled]{helvet} % ss
+\usepackage{courier} % tt
+
+% SANS SERIF:
+%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage[english]{babel}          % deutsch, deutsche Rechtschreibung
+%\usepackage[german]{babel}          % deutsch, deutsche Rechtschreibung
+\usepackage[T1]{fontenc}            % Umlaute und deutsches Trennen
+\usepackage[utf8]{inputenc}         % Unicode Text
+
+\usepackage[pdftex]{graphicx}       % to \includegraphics
+
+\usepackage{mathtools}              % additional math commands
+\usepackage{amssymb}                % math fonts
+\usepackage{amsfonts}               % math fonts
+                                    % math environment umlauts: \ddot{a}
+                                    % (http://blog.mixable.de/latex-mathe-umgebung-mit-umlauten/)
+
+\usepackage{tabularx}
+
+\usepackage[hidelinks]{hyperref}    % \url [hide border around links]
+\usepackage[table]{xcolor}               % \definecolor{name}{rgb}{0.5,0.5,0.5}
+
+\usepackage{paralist}               % enumeration and itermization: \compactitem
+\renewenvironment{itemize}{\begin{compactitem}}{\end{compactitem}}
+\renewenvironment{enumerate}{\begin{compactenum}}{\end{compactenum}}
+
+\usepackage{pdfpages}               % \includepdf[pages={1}]{myfile.pdf}
+
+\usepackage{caption}
+\usepackage{listings}           % code listings
+\usepackage{verbatim}           % \begin{comment}
+
+\usepackage{placeins}          % \FloatBarrier
+
+\usepackage{alltt}              % HTML-<pre> equivalent
+
+\usepackage{mdframed}           % framed figures
+
+\usepackage{pgffor}             % \foreach \index in {1, ..., 5}{ \index }
+
+\usepackage{wasysym}            % :) SMILIES!! \smiley \frownie
+
+\usepackage[normalem]{ulem}     % underlining with line breaks \uline{..}
+
+%\usepackage{ifthen}             % \ifthenelse{\equal{#1}{expected}}{IFTHEN:}{ELSE}
+
+\usepackage[nottoc]{tocbibind} % show bibliography in table of contents 
+% http://ftp.gwdg.de/pub/ctan/macros/latex/contrib/tocbibind/tocbibind.pdf
+
+\usepackage{algorithm2e}        % AFTER package tocbibind!!
+
+\usepackage{etoolbox}           % conditionals:
+                                % \newtoggle{name} \toggletrue{name} \iftoggle{name}{if}{else}
+\usepackage{ifthen}
+
+\usepackage{mdframed}           % framed text \begin{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Colors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{lightgray}{gray}{0.9}
+%\definecolor{lightergray}{gray}{0.7}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+% Set custom colors
+\definecolor{code}{gray}{0}
+\definecolor{canvas}{gray}{0.96}
+\definecolor{comment}{rgb}{0, 0.456, 0}
+\definecolor{keyword}{rgb}{0.5, 0, 0.5}
+\definecolor{lightergray}{rgb}{0.9, 0.9, 0.9}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Page Layout / Formatting
+% http://en.wikibooks.org/wiki/LaTeX/Page_Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3.5cm,right=2.5cm]{geometry}
+
+\usepackage{setspace}        % zeilenabstand
+\onehalfspacing
+
+\setlength{\parskip}{0.5em}  % abstand nach Absatz
+\setlength{\parindent}{0em}  % keine einrückung nach Absatz
+
+\sloppy                      % großzügige Formatierung, weniger Sibentrennungen
+
+
+% change section numbering
+%\renewcommand\thesubsection{(\alph{subsection})}
+%\renewcommand\thesubsubsection{\arabic{subsubsection}.}
+
+\hyphenation{
+    no-ta-tion
+}
+
+
+
+% start \sections on odd pages [not working?]
+%\let\oldsection\section
+%\def\section{\cleardoublepage\oldsection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+
+\newcommand{\enableHeaders}{%
+    \setlength{\headheight}{15.2pt}
+    \pagestyle{fancy}
+
+    \fancyhf{}
+    \lhead{\bfseries\nouppercase\leftmark}
+    \rhead{\nouppercase\rightmark}
+    \cfoot{\bfseries\thepage}
+}
+
+\newcommand{\disableHeaders}{%
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyhf{}
+    \cfoot{\bfseries\thepage}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% make \title available via \thetitle
+%\def\title#1{\gdef\@title{#1}\gdef\thetitle{#1}}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+\newcommand{\umlClass}{%
+    \newpage
+    \begin{figure}[ht]
+        \begin{mdframed}
+            \begin{tabbing}
+                XX\=XX\=XXXXXXXXXXXXXX\kill
+                \textbf{TimeSeries:} \\
+                \> \emph{data structure:}\\
+                \> \> string: \textbf{name}\\
+                \> \emph{operations:}\\
+                \> \> void \textbf{addRow}()
+
+            \end{tabbing}
+        \end{mdframed}
+        \caption{\label{myfig} My caption.}
+    \end{figure}
+}
+
+% Annotations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtoggle{annotations}
+\toggletrue{annotations}
+%\togglefalse{annotations}
+
+\mdfdefinestyle{annotation}{%
+    linecolor=red
+}
+\newcommand{\annotation}[1]{%
+    \iftoggle{annotations}{%
+        %\arr
+        \begin{mdframed}[style=annotation]
+            #1
+        \end{mdframed}
+    }{%
+        %[HIDDEN]
+    }
+
+}
+\newcommand{\emptyline}{
+    \mbox{}\\
+}
+
+
+% Use Cases
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Counter
+\newcounter{useCases}
+%\setcounter{requirements}{1}
+\newcounter{subUseCases}
+
+\newcommand{\ucLabel}[1]{%
+    {[UC.#1]}%
+    %[REQ\_#1]
+}
+\newcommand{\useCase}[2]{%
+    \refstepcounter{useCases}
+    \label{uc:#2}
+    %\textbf{\sffamily #1 \ucLabel{\arabic{useCases}}}%
+    \textbf{\sffamily \ucLabel{\arabic{useCases}} #1}%
+
+}
+\newcommand{\subUseCase}[2]{%
+    \refstepcounter{subUseCases}
+    \label{uc:#2}
+    \textbf{\sffamily \ucLabel{\arabic{useCases}.\arabic{subUseCases}} #1}%
+}
+\newcommand{\ucref}[1]{%
+    \ucLabel{\ref{uc:#1}}
+}
+
+% Table
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\alternatingTable}[4]{%
+%\begin{center}
+%\end{center}
+    \emptyline
+    {\sffamily \useCase{#1}{#2}}
+
+    #3
+    %\begin{table}[h!t]
+        %\caption{#1}
+        \begin{center}
+            \sffamily
+            \rowcolors{1}{}{lightgray}
+            \begin{tabular}{l  | p{10cm}}
+                \hline
+                #4
+                \hline
+            \end{tabular}
+        \end{center}
+    %\end{table}
+}
+\newcommand{\subTableUseCase}[4]{%
+%\begin{center}
+%\end{center}
+    \emptyline
+    {\sffamily \subUseCase{#1}{#2}}
+
+    #3
+    %\begin{table}[h!t]
+        %\caption{#1}
+        \begin{center}
+            \sffamily
+            \rowcolors{1}{}{lightgray}
+            \begin{tabular}{l  | p{10cm}}
+                \hline
+                #4
+                \hline
+            \end{tabular}
+        \end{center}
+    %\end{table}
+}
+
+% Requirements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{requirements}
+%\setcounter{requirements}{1}
+
+\newcommand{\reqlabel}[1]{%
+    [REQ#1]%
+    %[REQ\_#1]
+}
+\newcommand{\requirement}[2]{%
+    \refstepcounter{requirements}
+    \label{req:#2}
+    %\paragraph{\large #1 \reqlabel{\arabic{requirements}}}\mbox{}\\
+    \textbf{#1 \reqlabel{\arabic{requirements}}}%
+}
+\newcommand{\reqref}[1]{%
+    \reqlabel{\ref{req:#1}}
+}
+
+\newcommand{\req}[1]{%
+    \textbf{\color{blue!60}#1}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\topic}[1]{%
+    %\paragraph{\large #1}\mbox{}\\
+    \paragraph{\textbf{#1}}\mbox{}\\
+    %\paragraph{$\rightarrow$\large #1}\mbox{}\\
+%    \begin{tabular}{@{\hspace{3ex}}p{42em}}
+%        \paragraph{\large #1}\mbox{}\\
+%    \end{tabular}
+}
+\newcommand{\subtopic}[1]{%
+    \paragraph{\textbf{#1}}\mbox{}\\
+}
+
+\newcommand{\todo}[1]{%
+    \emph{\color{red!50}#1}%
+}
+
+\newcommand{\tocite}[1]{%
+    \emph{\color{blue!35}[REF: #1]}%
+}
+
+\newcommand{\omg}[1]{%
+    \mbox{
+    \hspace{0.4\textwidth} \color{red}#1%
+    }
+}
+
+\newcommand{\tip}[1]{%
+    \emph{\color{blue!55}#1}
+}
+
+% inline code
+\newcommand{\ic}[1]{%
+    {\ttfamily #1}%
+%    {%
+%        \setlength{\fboxsep}{1pt}%
+%        \fcolorbox{lightgray}{lightergray}{%
+%            \lstinline[basicstyle=\ttfamily]{#1}%
+%        }%
+%    }%
+}
+
+\newcommand{\arr}{%
+    $\rightarrow$
+}
+\newcommand{\darr}{%
+    \\$\rightarrow\rightarrow$
+}
+\newcommand{\codedef}[3]{%
+    \ic{#1} \emph{(#2)}\\
+    #3
+}
+
+\newcommand{\nutshell}[1]{%
+
+    \HRule
+
+    \emph{#1}
+
+    \HRule
+
+}
+
+\newcommand{\img}[4][1]{%
+    %\abb[scale]{path}{caption}{label}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=#1\textwidth]{#2}
+        %\includegraphics[scale=#1]{#2}
+        \caption{#3}
+        \label{img:#4}
+    \end{figure}
+}
+\newcommand{\imgref}[1]{%
+    \emph{\textbf{Abb. \ref{img:#1}}}%
+    %\emph{\textbf{Abbildung \ref{img:#1}}}%
+    %Abbildung \ref{img:#1}%
+    %\mbox{Abb. \ref{img:#1}}
+}
+\newcommand{\lstref}[1]{%
+    \emph{\textbf{Listing \ref{code:#1}}}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% custom environments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{define}{Definition}         % use as environment: \begin{define}
+
+\newenvironment{reviewx}
+{% This is the begin code 
+    \color{orange!70} % 50percent red
+    %\begin{it}     % italic
+}
+{% This is the end code
+    %\end{it}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configure Listings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\lstdefinelanguage{javascript}{
+    keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, for, in, while, do, else, case, break},
+    ndkeywords={class, export, boolean, throw, implements, import, this},
+    sensitive=false,
+    comment=[l]{//},
+    morecomment=[s][\color{blue}\ttfamily]{/*}{*/},
+    morestring=[b]',
+    morestring=[b]"
+}
+
+
+\lstdefinestyle{jsstyle}{
+    belowcaptionskip=1\baselineskip,
+    breaklines=true,
+    %captionpos=b,
+    frame=L,
+    xleftmargin=\parindent,
+    language=C,
+    showstringspaces=false,
+    basicstyle=\footnotesize\ttfamily,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{purple!40!black},
+    identifierstyle=\color{blue},
+    stringstyle=\color{orange},
+}
+
+% Parameters for formatting code (optional, affects all code listings)
+% http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+\lstset{
+    language=javascript,
+    backgroundcolor=\color{canvas},
+    basicstyle=\ttfamily\small\color{code},
+    commentstyle=\color{comment},
+    identifierstyle=\color{black},
+    keywordstyle=\color{keyword}\bfseries,
+    ndkeywordstyle=\color{keyword}\bfseries,
+    stringstyle=\color{blue}\ttfamily,
+    frame=single,
+    numbers=left,
+    caption={\lstname}
+}
+
+\newcommand{\code}[2]{
+    %\begin{minipage}{\textwidth}
+        \lstinputlisting[caption=#1, escapechar=, style=jsstyle]{#2}
+    %\end{minipage}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FINALIZE
+%
+% -> hide annotations
+% -> disable \todo \tip style
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\finalize}{%
+    \renewcommand{\todo}[1]{##1}
+    \renewcommand{\tip}[1]{##1}
+    \renewcommand{\tocite}[1]{}
+    \renewcommand{\req}[1]{##1}
+    \togglefalse{annotations}
+}
+
+%\finalize

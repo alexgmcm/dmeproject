@@ -1,0 +1,377 @@
+\begin{thebibliography}{10}
+
+\bibitem{Agarwal2010}
+Arvind Agarwal and Hal Daum\'{e}.
+\newblock {A geometric view of conjugate priors}.
+\newblock {\em Machine Learning}, 81(1):99--113, July 2010.
+
+\bibitem{Aggarwal2011}
+Charu~C Aggarwal.
+\newblock {\em {Social Network Data Analytics}}.
+\newblock 2011.
+
+\bibitem{Allan2000}
+James Allan, Victor Lavrenko, and Hubert Jin.
+\newblock {First story detection in TDT is hard}.
+\newblock {\em Proceedings of the ninth international conference on Information
+  and knowledge management - CIKM '00}, pages 374--381, 2000.
+
+\bibitem{Amatriain2013}
+Xavier Amatriain.
+\newblock {Mining large streams of user data for personalized recommendations}.
+\newblock {\em ACM SIGKDD Explorations Newsletter}, 14(2):37, April 2013.
+
+\bibitem{Belkin2003}
+M~Belkin and P~Niyogi.
+\newblock {Laplacian eigenmaps for dimensionality reduction and data
+  representation}.
+\newblock {\em Neural computation}, 2003.
+
+\bibitem{Bengio2009}
+Yoshua Bengio, J\'{e}r\^{o}me Louradour, Ronan Collobert, and Jason Weston.
+\newblock {Curriculum learning}.
+\newblock {\em Proceedings of the 26th Annual International Conference on
+  Machine Learning - ICML '09}, pages 1--8, 2009.
+
+\bibitem{Benhardus2013}
+James Benhardus.
+\newblock {Streaming trend detection in twitter}.
+\newblock {\em International Journal of Web Based Commnities}, pages 1--7,
+  2013.
+
+\bibitem{Fox}
+P~Bodik, M~Goldszmidt, and Armando Fox.
+\newblock {Fingerprinting the datacenter: automated classification of
+  performance crises}.
+\newblock {\em EUROSYS'10: PROCEEDINGS OF THE EUROSYS 2010 CONFERENCE}, 2010.
+
+\bibitem{Breakdown2013}
+Marking Breakdown.
+\newblock {[Assignment 2] Introductory Applied Machine Learning}.
+\newblock pages 1--4, 2013.
+
+\bibitem{Chung2003}
+S~Chung and D~McLeod.
+\newblock {Dynamic topic mining from news stream data}.
+\newblock {\em On The Move to Meaningful Internet Systems 2003: \ldots}, 2003.
+
+\bibitem{DellaPietra1997}
+S.~{Della Pietra}, V.~{Della Pietra}, and J.~Lafferty.
+\newblock {Inducing features of random fields}.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  19(4):380--393, April 1997.
+
+\bibitem{Dielmann2007}
+Alfred Dielmann and Steve Renals.
+\newblock {Automatic Meeting Segmentation Using Dynamic Bayesian Networks}.
+\newblock {\em IEEE Transactions on Multimedia}, 9(1):25--36, January 2007.
+
+\bibitem{Edwards1988}
+Robert~G. Edwards and Alan~D. Sokal.
+\newblock {Generalization of the fortuin-kasteleyn-swendsen-wang representation
+  and monte carlo algorithm}.
+\newblock {\em Physical review D}, 1988.
+
+\bibitem{Fawcett1999}
+Tom Fawcett and Foster Provost.
+\newblock {Activity monitoring: Noticing interesting changes in behavior}.
+\newblock {\em Proceedings of the fifth ACM SIGKDD international \ldots},
+  1(212), 1999.
+
+\bibitem{Ghemawat2003}
+Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung.
+\newblock {[4] The Google file system}.
+\newblock {\em ACM SIGOPS Operating Systems Review}, 37(5):29, December 2003.
+
+\bibitem{Goldberger2004}
+Jacob Goldberger, Sam Roweis, Geoff Hinton, and Ruslan Salakhutdinov.
+\newblock {Neighbourhood components analysis}.
+\newblock 2004.
+
+\bibitem{Han2005}
+Jiawei Han, Yixin Chen, Guozhu Dong, Jian Pei, Benjamin~W. Wah, Jianyong Wang,
+  and Y.~Dora Cai.
+\newblock {Stream Cube: An Architecture for Multi-Dimensional Analysis of Data
+  Streams}.
+\newblock {\em Distributed and Parallel Databases}, 18(2):173--197, September
+  2005.
+
+\bibitem{Hinton2002}
+Geoffrey~E Hinton.
+\newblock {Training products of experts by minimizing contrastive divergence.}
+\newblock {\em Neural computation}, 14(8):1771--800, August 2002.
+
+\bibitem{Hinton2006}
+Geoffrey~E Hinton, Simon Osindero, and Yee-Whye Teh.
+\newblock {A fast learning algorithm for deep belief nets.}
+\newblock {\em Neural computation}, 18(7):1527--54, July 2006.
+
+\bibitem{Howard1988}
+John~H. Howard, Michael~L. Kazar, Sherri~G. Menees, David~a. Nichols,
+  M.~Satyanarayanan, Robert~N. Sidebotham, and Michael~J. West.
+\newblock {[4] Scale and performance in a distributed file system}.
+\newblock {\em ACM Transactions on Computer Systems}, 6(1):51--81, February
+  1988.
+
+\bibitem{Hummer2013}
+Waldemar Hummer, Benjamin Satzger, and Schahram Dustdar.
+\newblock {Elastic stream processing in the Cloud}.
+\newblock {\em \ldots Reviews: Data Mining and \ldots}, pages 1--14, 2013.
+
+\bibitem{Oh2010}
+Jung hun Oh, Aditya Apte, Rawan Al-Lozi, and Issam~El Naqa.
+\newblock {Towards Prediction of Radiation Pneumonitis Arising from Lung Cancer
+  Patients Using Machine Learning Approaches}.
+\newblock {\em Journal of Radiation Oncology Informatics}, 2009.
+
+\bibitem{Indyk1998}
+Piotr Indyk and Rajeev Motwani.
+\newblock {Approximate nearest neighbors}.
+\newblock {\em Proceedings of the thirtieth annual ACM symposium on Theory of
+  computing - STOC '98}, pages 604--613, 1998.
+
+\bibitem{Jiang}
+Lingxiao Jiang, Ghassan Misherghi, Zhendong Su, and S~Glondu.
+\newblock {Deckard: Scalable and accurate tree-based detection of code clones}.
+\newblock {\em Proceedings of the 29th \ldots}, (0520320), 2007.
+
+\bibitem{Kim2006}
+Sang-bum Kim, Kyoung-soo Han, Hae-chang Rim, and Sung~Hyon Myaeng.
+\newblock {Some Effective Techniques for Naive Bayes Text Classification}.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  18(11):1457--1466, November 2006.
+
+\bibitem{Klein2004}
+Dan Klein and CD~Manning.
+\newblock {Corpus-based induction of syntactic structure: Models of dependency
+  and constituency}.
+\newblock {\em Proceedings of the 42nd Annual Meeting on \ldots}, 2004.
+
+\bibitem{Koren}
+Yehuda Koren.
+\newblock {Factorization meets the neighborhood: a multifaceted collaborative
+  filtering model}.
+\newblock {\em Proceedings of the 14th ACM SIGKDD international \ldots}, 2008.
+
+\bibitem{Kovar2002}
+Lucas Kovar, Michael Gleicher, and Fr\'{e}d\'{e}ric Pighin.
+\newblock {Motion graphs}.
+\newblock {\em ACM Transactions on Graphics}, 21(3):1--10, July 2002.
+
+\bibitem{Lau2012}
+JH~Lau, N~Collier, and T~Baldwin.
+\newblock {On-line Trend Analysis with Topic Models:$\backslash$\# twitter
+  Trends Detection Topic Model Online.}
+\newblock {\em COLING}, 2(December):1519--1534, 2012.
+
+\bibitem{Leibiusky}
+Jonathan Leibiusky, Gabriel Eisbruch, and Dario Simonassi.
+\newblock {\em {Getting started with storm}}.
+\newblock 2012.
+
+\bibitem{Li2008}
+Xin Li, Lei Guo, and Yihong~Eric Zhao.
+\newblock {Tag-based social interest discovery}.
+\newblock {\em Proceeding of the 17th international conference on World Wide
+  Web - WWW '08}, page 675, 2008.
+
+\bibitem{Lin2010}
+Jimmy Lin and Chris Dyer.
+\newblock {Data-Intensive Text Processing with MapReduce}.
+\newblock {\em Synthesis Lectures on Human Language Technologies}, 3(1):1--177,
+  January 2010.
+
+\bibitem{Mathioudakis2010}
+Michael Mathioudakis and Nick Koudas.
+\newblock {Twittermonitor: trend detection over the twitter stream}.
+\newblock {\em 2010 ACM SIGMOD International Conference on Management of data},
+  pages 5--7, 2010.
+
+\bibitem{Mckeigue2010}
+Paul Mckeigue, Jon Krohn, Felix~V. Agakov, and Amos Storkey.
+\newblock {Sparse instrumental variables (SPIV) for genome-wide studies}.
+\newblock {\em Advances in Neural \ldots}, pages 1--9, 2010.
+
+\bibitem{Abadi1970}
+{Michael Stonebreaker}, Daniel Abadi, David~J Dewitt, Sam Madden, Erik Paulson,
+  Andrew Pavlo, and Alexander Rasin.
+\newblock {MapReduce and Parallel DBMSs: Friends or Foes?}
+\newblock {\em Analytical chemistry}, 42(7):3A--4A, June 1970.
+
+\bibitem{Montag2013}
+David Montag.
+\newblock {Understanding Neo4j Scalability}.
+\newblock {\em neo technology}, (January), 2013.
+
+\bibitem{Movshovitz-Attias2013}
+D~Movshovitz-Attias and WW~Cohen.
+\newblock {Natural Language Models for Predicting Programming Comments}.
+\newblock {\em cs.cmu.edu}, pages 35--40, 2013.
+
+\bibitem{Murphy2012}
+KP~Murphy.
+\newblock {\em {Machine Learning - A Probabilistic Perspective}}.
+\newblock 2012.
+
+\bibitem{Patel2012}
+Sweety Patel.
+\newblock {How to manage current and historical information within data
+  warehouse?}
+\newblock 2012.
+
+\bibitem{Quinn2009}
+John~a Quinn, Christopher K~I Williams, and Neil McIntosh.
+\newblock {Factorial switching linear dynamical systems applied to
+  physiological condition monitoring.}
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  31(9):1537--51, September 2009.
+
+\bibitem{Reichert2011}
+DP~Reichert, Peggy Series, and AJ~Storkey.
+\newblock {A hierarchical generative model of recurrent Object-Based attention
+  in the visual cortex}.
+\newblock {\em Artificial Neural Networks and \ldots}, pages 1--8, 2011.
+
+\bibitem{Rennie2001}
+JDM Rennie.
+\newblock {Improving multi-class text classification with naive Bayes}.
+\newblock 2001.
+
+\bibitem{Robinsona2013}
+Ian Robinson, Jim Webber, and Emil Eifrem.
+\newblock {\em {Graph Databases}}.
+\newblock 2013.
+
+\bibitem{Robinson2013}
+Ian Robinson, Jim Webber, and Emil Eifrem.
+\newblock {\em {No Graph Databases [Early Release]}}.
+\newblock 2013.
+
+\bibitem{Rosenblum2010}
+Nathan~E. Rosenblum, Barton~P. Miller, and Xiaojin Zhu.
+\newblock {Extracting compiler provenance from program binaries}.
+\newblock {\em Proceedings of the 9th ACM SIGPLAN-SIGSOFT workshop on Program
+  analysis for software tools and engineering - PASTE '10}, page~21, 2010.
+
+\bibitem{Ru2011}
+N~Ruflin, H~Burkhart, and S~Rizzotti.
+\newblock {Social-data storage-systems}.
+\newblock {\em Databases and Social Networks}, 2011.
+
+\bibitem{Ruflin2011}
+Nicolas Ruflin, Helmar Burkhart, and Sven Rizzotti.
+\newblock {Social-data storage-systems}.
+\newblock {\em Databases and Social Networks on - DBSocial '11}, pages 7--12,
+  2011.
+
+\bibitem{Sandholm2007}
+Tuomas Sandholm.
+\newblock {Perspectives on multiagent learning}.
+\newblock {\em Artificial Intelligence}, 171(7):382--391, May 2007.
+
+\bibitem{Sha2012}
+Xiaolan Sha and Daniele Quercia.
+\newblock {Spotting trends: the wisdom of the few}.
+\newblock {\em Proceedings of the sixth \ldots}, 2012.
+
+\bibitem{Shirley2002}
+P~Shirley, M~Ashikhmin, and M~Gleicher.
+\newblock {\em {Fundamentals of computer graphics}}.
+\newblock 2002.
+
+\bibitem{Spiliopoulou2011}
+Athina Spiliopoulou and Amos Storkey.
+\newblock {Comparing probabilistic models for melodic sequences}.
+\newblock {\em Machine Learning and Knowledge Discovery \ldots}, 2011.
+
+\bibitem{Sridhara2010}
+G~Sridhara, E~Hill, and D~Muppaneni.
+\newblock {Towards automatically generating summary comments for java methods}.
+\newblock {\em Proceedings of the \ldots}, 2010.
+
+\bibitem{Stonebraker2005}
+Michael Stonebraker, Ugur Cetintemel, and Stan Zdonik.
+\newblock {The 8 requirements of real-time stream processing}.
+\newblock {\em ACM SIGMOD Record}, 34(4):42--47, December 2005.
+
+\bibitem{Stonebraker2006}
+Mike Stonebraker, Ugur Cetintemel, and Stanley Zdonik.
+\newblock {The Eight Rules of Real-Time Stream Processing}.
+\newblock 2006.
+
+\bibitem{Table2014}
+Degree~Programme Table and Computer Science.
+\newblock {Programme Table: Computer Science (MSc) (Full-time) 2013/2014}.
+\newblock 2014.
+
+\bibitem{Tozicka2008}
+Jan Tozicka, Michael Rovatsos, Michal Pechoucek, and Stepan Urban.
+\newblock {MALEF: Framework for distributed machine learning and data mining}.
+\newblock {\em International Journal of Intelligent Information and Database
+  Systems}, 2(1):6, 2008.
+
+\bibitem{Weinberger2009}
+Kilian Weinberger, Anirban Dasgupta, Josh Attenberg, John Langford, and Alex
+  Smola.
+\newblock {Feature hashing for large scale multitask learning}.
+\newblock {\em \ldots on Machine Learning}, (Icml), 2009.
+
+\bibitem{Weiss2008}
+Yair Weiss, Antonio Torralba, and Rob Fergus.
+\newblock {Spectral hashing}.
+\newblock {\em Advances in neural \ldots}, (1):1--8, 2008.
+
+\bibitem{White}
+Tom White.
+\newblock {\em {Hadoop: the definitive guide}}.
+\newblock 2012.
+
+\bibitem{Willmott2005}
+Cj~Willmott and K~Matsuura.
+\newblock {Advantages of the mean absolute error (MAE) over the root mean
+  square error (RMSE) in assessing average model performance}.
+\newblock {\em Climate Research}, 30:79--82, 2005.
+
+\bibitem{Witten2005}
+IH~Witten and Eibe Frank.
+\newblock {\em {Data Mining: Practical machine learning tools and techniques}}.
+\newblock 2005.
+
+\bibitem{Wright2000}
+RS~Wright and B~Lipchak.
+\newblock {\em {OpenGL superbible}}.
+\newblock 2000.
+
+\bibitem{Yang2008}
+Ying Yang and Geoffrey~I. Webb.
+\newblock {Discretization for naive-Bayes learning: managing discretization
+  bias and variance}.
+\newblock {\em Machine Learning}, 74(1):39--74, September 2008.
+
+\bibitem{Yao2011}
+Limin Yao, Aria Haghighi, Sebastian Riedel, and A~McCallum.
+\newblock {Structured relation discovery using generative models}.
+\newblock {\em Proceedings of the \ldots}, 2011.
+
+\bibitem{Yao2012}
+Limin Yao, Sebastian Riedel, and A~McCallum.
+\newblock {Unsupervised relation discovery with sense disambiguation}.
+\newblock {\em Proceedings of the 50th Annual Meeting \ldots}, (2001), 2012.
+
+\bibitem{Zheng2006}
+AX~Zheng, MI~Jordan, and Ben Liblit.
+\newblock {Statistical debugging: simultaneous identification of multiple
+  bugs}.
+\newblock {\em Proceedings of the 23rd \ldots}, 2006.
+
+\bibitem{Zitnick}
+CL~Zitnick and Devi Parikh.
+\newblock {Bringing semantics into focus using visual abstraction}.
+\newblock {\em Computer Vision and Pattern \ldots}, 2013.
+
+\bibitem{Zitnicka}
+CL~Zitnick, Devi Parikh, and Lucy Vanderwende.
+\newblock {Learning the Visual Interpretation of Sentences}.
+\newblock {\em msr-waypoint.net}.
+
+\end{thebibliography}

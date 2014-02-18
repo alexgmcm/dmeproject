@@ -1,0 +1,72 @@
+% Taken From
+% http://en.wikibooks.org/wiki/LaTeX/Title_Creation
+
+\begin{titlepage}
+    \vfill
+    \Large
+    \begin{center}
+
+        % Upper part of the page. The '~' is needed because \\
+        % only works if a paragraph has started.
+        %\includegraphics[width=0.15\textwidth]{./hsrm_logo.png}~\\[1cm]
+        %\includegraphics[scale=0.3]{hsrm_logo}
+
+        \theheader
+
+        %\vspace{2 cm}
+    %vfill %\textsc{\LARGE Hochschule RheinMain}\\[1.5cm]
+
+    \vfill
+
+    \textsc{\textbf{\LARGE \thetitle}}\\[0.3cm]
+
+        \HRule \\[0.5cm]
+        \huge
+        %\LARGE
+        \textbf{\thesubtitle}\\
+    \HRule
+
+    {\normalsize by \theauthor }
+
+    \vfill
+
+    % Author and supervisor
+
+    %\begin{minipage}{0.4\textwidth}
+    %    \begin{flushleft} \large
+    %        \emph{Verfasser:}\\
+    %        Tim Sterker
+    %    \end{flushleft}
+    %\end{minipage}
+    %\begin{minipage}{0.4\textwidth}
+    %    \begin{flushright} \large
+    %        \emph{Dozent:} \\
+    %        Prof. Jörg Berdux
+    %    \end{flushright}
+    %\end{minipage}
+
+
+    \vfill
+
+
+    \thedate
+
+\end{center}
+
+\normalsize
+    %\renewcommand{\arraystretch}{1.1}
+    %\begin{table}[b]
+        %\centering
+    %\begin{tabular}{p{2,5cm} p{4cm}}
+        %Vorgelegt von   & Tim Sterker\\
+        %am              & \today \\ [2.5ex]
+        %Referent        & Prof. Jörg Berdux\\
+        %Korreferent     & Prof. Wolfgang Weitz\\
+    %\end{tabular}
+    %\end{table}
+
+
+
+\end{titlepage}
+
+\normalsize
