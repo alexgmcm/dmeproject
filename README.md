@@ -3,7 +3,10 @@
 - [Official Description](http://www.bbci.de/competition/iii/desc_V.html)
 
 
-### access files form sandbox/user
+### Sandbox
+
+When checking out the data, please put you scripts into ``sandbox/<name>`` so all can use it.
+Form a script in ``sandbox/<name>`` you can access a file with:
 >
     data = load('../../data/matlab/data_psd_mat/train_subject1_psd01.mat')
 
