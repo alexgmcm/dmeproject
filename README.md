@@ -1,10 +1,14 @@
-
 ### Links
 >
 - [Official Description](http://www.bbci.de/competition/iii/desc_V.html)
 
 
+### access files form sandbox/user
+>
+    data = load('../../data/matlab/data_psd_mat/train_subject1_psd01.mat')
+
 ### folder structure for data
+(given the data/ directory is in the root dir)
 
 >
     data/
