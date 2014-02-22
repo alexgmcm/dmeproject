@@ -1,10 +1,19 @@
-
 ### Links
 >
 - [Official Description](http://www.bbci.de/competition/iii/desc_V.html)
 
 
-### folder structure for data
+### Sandbox
+
+When checking out the data, please put you scripts into ``sandbox/<name>`` so all can use it.
+Form a script in ``sandbox/<name>`` you can access a file with:
+>
+    data = load('../../data/matlab/data_psd_mat/train_subject1_psd01.mat')
+
+### Folder structure for data
+
+We don't save the data (see .gitignore) on github as it is ~1.2 GB.
+Just store your data in the root folder according to following structure:
 
 >
     data/
