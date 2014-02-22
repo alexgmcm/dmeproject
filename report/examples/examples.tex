@@ -1,0 +1,89 @@
+
+
+\section{Example Section}
+
+This is a section where basic commands are shown
+
+Just look at the \ic{examples/examples.Tex} file.
+
+\subsection{Example Subsection}
+
+Some commands are following\ldots
+
+\subsubsection{General Text Formatting}
+
+\emph{Emphasize}, \textbf{bold}, 
+
+\subsubsection{Lists}
+
+Unordered list:
+\begin{itemize}
+    \item some list item
+    \item and another
+\end{itemize}
+
+Enumerated list:
+\begin{enumerate}
+    \item first item
+    \item and the second one
+\end{enumerate}
+
+\subsubsection{Text referencing}
+
+Every time you use a \ic{label} you can reference it by using the \ic{ref} command.
+I've created some custom commands that handle labels and referencing more implicitly for images and code.
+
+Just ask for details.
+
+\subsubsection{Maths}
+
+Inline math is as easy as $1 + 1 = 2$, you see?
+
+\topic{Centered Equation}
+\[
+    1 + 1 = 2
+\]
+
+\topic{Numbered (and referencable) Equation}
+\begin{equation}
+    1 + 1 = 2
+    \label{eq:equation-reference-id}
+\end{equation}
+
+I can use the \ic{ref} command to reference equation (\ref{eq:equation-reference-id}).
+
+
+\subsubsection{Code}
+There are three variants to insert code. The visuals could be tweaked.
+
+\topic{Inline Code}
+The first is \ic{inline code}, where just a monospace font is used.
+
+\topic{Code environment}
+This Code is directly written inside an lstlisting environment:
+\begin{lstlisting}
+function one(){
+    return 1;
+}
+\end{lstlisting}
+
+\begin{minipage}{\textwidth}{
+\topic{Code from file}
+\emph{Note:} The minipage environment can be used to prevent code being split by a page break.
+        \code{Example code inserted from examples/code.js}{examples/code.js}{code-reference-id}
+}
+\end{minipage}
+
+
+\subsubsection{Footnotes}
+
+A footnote\footnote{some explanatory text} is created with the footnote command.
+
+
+\subsubsection{Citations}
+We still have to figure out how to go about a shared bibliography.
+My Mendeley creates a bibliography for the DME references automatically.
+We could use this as a basis and have additional .bib files for individual references.
+
+Anyways\ldots I'd like to cite Lotte et al.\cite{Lotte2007} in here.
+
