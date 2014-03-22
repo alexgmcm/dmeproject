@@ -13,4 +13,11 @@
 \contentsline {paragraph}{\textbf {Code from file}}{2}{section*.6}
 \contentsline {subsubsection}{\numberline {1.1.6}Footnotes}{2}{subsubsection.1.1.6}
 \contentsline {subsubsection}{\numberline {1.1.7}Citations}{2}{subsubsection.1.1.7}
-\contentsline {section}{\numberline {2}Introduction}{3}{section.2}
+\contentsline {section}{\numberline {2}Overview}{3}{section.2}
+\contentsline {section}{\numberline {3}Previous Work}{3}{section.3}
+\contentsline {section}{\numberline {4}Data Preparation}{3}{section.4}
+\contentsline {section}{\numberline {5}Exploratory Data Analysis}{3}{section.5}
+\contentsline {section}{\numberline {6}Learning Methods Used}{3}{section.6}
+\contentsline {section}{\numberline {7}Results \& Evaluation}{4}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{4}{section.8}
+\contentsline {section}{References}{5}{section*.7}

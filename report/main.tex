@@ -28,11 +28,12 @@
 \newcommand{\theauthor}{%
     %Tim Sterker \emph{(s1365873)}
     %\emph{s1365873}
+    %Drago{\c s} Stanciu\\
     \\
-    Alex\\
-    Andrew\\
-    Dragos\\
-    Tim\\
+    Dragoș Stanciu\\
+    Alex McMurray\\
+    Andrew Ferguson\\
+    Tim Sterker\\
 }
 \newcommand{\thecity}{%
     Edinburgh
@@ -75,15 +76,24 @@
 \newpage
 %\input{report}
 \input{examples/examples}
-\input{introduction/introduction}
+
+\input{01-overview}
+\input{02-previous-work}
+\input{03-data-preparation}
+\input{04-exploratory-data-analysis}
+\input{05-learning-methods-used}
+\input{06-results-and-evaluation}
+\input{07-conclusions}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography + Attachments
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \newpage
-% \nocite{*}    % WARNING: MIGHT THROW ERRORS due to special characters in bibliography
-% \bibliographystyle{plain}
+ \newpage
+ \nocite{*}    % WARNING: MIGHT THROW ERRORS due to special characters in bibliography
+ \bibliographystyle{plain}
 % %\bibliographystyle{alpha}
-\bibliography{bibs/edinburgh-courses-semester2-DME-project-reference}
+%\bibliography{bibs/edinburgh-courses-semester2-DME-project-reference}
+\bibliography{bibliography.bib}
 
 \end{document}
