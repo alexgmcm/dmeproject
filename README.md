@@ -47,9 +47,7 @@ Just store your data in the root folder according to following structure:
     │       ├── train_subject3_raw02.asc
     │       └── train_subject3_raw03.asc
     ├── matlab
-    │   ├── analysis.m
     │   ├── data_psd_mat
-    │   │   ├── analysis.m
     │   │   ├── test_subject1_psd04.mat
     │   │   ├── test_subject2_psd04.mat
     │   │   ├── test_subject3_psd04.mat
@@ -77,5 +75,4 @@ Just store your data in the root folder according to following structure:
     │       ├── train_subject3_raw01.mat
     │       ├── train_subject3_raw02.mat
     │       └── train_subject3_raw03.mat
-    ├── REMARK
-    └── REMARK~
+    └── REMARK
