@@ -1,11 +1,22 @@
 
 \section{Overview}
 
-\annotation{
-    \textbf{Notes:}
-    \begin{itemize}
-        \item The report is supposed to be around 6-12 pages.
-    \end{itemize}
-}
+\textbf{Data}
+\begin{itemize}
+    \item EEG time series data
+    \item \textbf{asynchronous}:\\
+        ``subject does not follow any fixed scheme but concentrates repetitively on a mental task for a random amount of time
+        and switches directly to the next, without passing through a rest state''
+    \item preprocessing was done to also be able to use weka
+    \item exploratory data analysis to get a feel for the data\ldots
+\end{itemize}
 
-\ldots
+\textbf{Classification}\\
+Different classification methods were used: explicit time series models (HMM, NN?, \ldots) and others that ignore fact that data is a time series (SVM, \ldots).
+
+\textbf{Training Data}\\
+Mostly the precomputed PSD data was used for classification.
+\arr because it reduces data\\
+\arr because it ``summarizes'' the data, also in a sense encodes some time information?
+\arr \ldots
+
