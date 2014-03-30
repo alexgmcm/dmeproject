@@ -1,6 +1,7 @@
 ### Links
 >
 - [Official Description](http://www.bbci.de/competition/iii/desc_V.html)
+- [Competition Results](http://www.bbci.de/competition/iii/results/index.html)
 
 
 ### Sandbox
